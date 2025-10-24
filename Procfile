@@ -1,0 +1,1 @@
+web: gunicorn tecs_project.wsgi
