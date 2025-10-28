@@ -3,17 +3,69 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage Teatro</title>
-    <link rel="stylesheet" href="{% static 'tecs_app/css/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Homepage</title>
+   <link rel="stylesheet" href="{% static 'tecs_app/css/style.css' %}">
 </head>
 <body>
-    <h1>Benvenuti al Teatro</h1>
-    <p>
-        Il teatro è un'arte e un'istituzione complessa che comprende più significati: 
-        è il luogo fisico dove si svolgono spettacoli, un genere letterario di testi destinati alla scena, 
-        l'evento stesso della rappresentazione dal vivo e una forma di comunicazione tra attori e pubblico.
-    </p>
+    <div class="container">
+        <img src="{% static 'tecs_app/images/banner_ac.png' %}" alt="Ambra Cala" class="hero-image">
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">Chi sono</button>
+                <div class="accordion-content">
+                    <p>Proprio così: Amra, non Ambra.
+Se ti sei soffermato sul nome, probabilmente hai pensato a un refuso.
+E invece no. O meglio, un refuso c’è stato — ma all’anagrafe. È stato mio nonno, infatti, a scrivere Amra invece di Ambra.
+Di quell’errore me ne sono accorta solo più tardi, anche perché nel frattempo tutti — compresi i miei genitori — mi hanno sempre chiamata Ambra: il nome che sento davvero mio, anche se nei documenti manca ancora quella “B”.
+Sono nata a nata a Berat (Albania) nel 1996 e cresciuta a Roma, e sono un Ingegnera Informatica appassionata di Big Data e Intelligenza Artificiale. Dopo il Liceo Classico Plauto, ho studiato a Roma Tre e proseguito gli studi magistrali in Ingegneria Informatica Indirizzo Big Data presso l’Università Internazionale Uninettuno. Ho iniziato la carriera in ESIS S.R.L. e oggi lavoro in Deloitte Consulting, dove continuo a crescere professionalmente.</p>
+                </div>
+            </div>
+
+                        <div class="accordion-item">
+                <button class="accordion-header">Competenze</button>
+<div class="accordion-content">
+    <ul>
+        <li><strong>Sviluppo Software:</strong> Java SE/EE, SpringBoot, SQL, Python, TensorFlow, Keras, Angular, TypeScript, Ionic, Django</li>
+        <li><strong>Machine Learning & Data Analysis:</strong> Python, Pandas, NumPy, Scikit-learn, GAN</li>
+        <li><strong>CMS e Piattaforme Digitali:</strong> Adobe Experience Manager (AEM), Oracle</li>
+        <li><strong>Metodologie di lavoro:</strong> Agile</li>
+        <li><strong>Strumenti:</strong> Visual Studio Code, Google Colab, MS Office</li>
+        <li><strong>Lingue:</strong> Albanese, Italiano, Inglese, Spagnolo</li>
+    </ul>
+    <p>Per approfondire, scrivimi via mail o contattami su <a href="https://www.linkedin.com/in/amra-cala-167571145" target="_blank">LinkedIn</a>!</p>
+</div>
+
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">Passioni</button>
+                <div class="accordion-content">
+                    <p>Amo la musica — e amo lasciarmi trasportare da essa, seguire il ritmo, perdermi tra le note.
+La mia passione più grande però è il teatro. 
+Ci siamo incontrati tardi, ma da quel momento non ci siamo più lasciati.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">Contatti</button>
+<div class="accordion-content">
+    <ul>
+        <li>Email: <a href="mailto:calashouse03@gmail.com">calashouse03@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/amra-cala-167571145" target="_blank">www.linkedin.com/in/amra-cala-167571145</a></li>
+        <li>Blog: <a href="https://tecs-project.onrender.com/" target="_blank">https://tecs-project.onrender.com/</a></li>
+    </ul>
+</div>
+            </div>
+        </div>
+    </div>
 
     <script src="{% static 'tecs_app/js/script.js' %}"></script>
+    <footer class="site-footer">
+    <p>© 2025 Amra Cala. Tutti i diritti riservati.</p>
+</footer>
+
 </body>
 </html>
